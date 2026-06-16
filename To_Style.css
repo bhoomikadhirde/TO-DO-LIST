@@ -1,0 +1,119 @@
+body {
+      background: linear-gradient(135deg, #db7cbc, #b385e0, #544da7);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /**/.container {
+      background: white;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      width: 400px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+    h1 {
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: #0f172a;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    h1 svg {
+      width: 22px;
+      height: 22px;
+      fill: #2563eb;
+    }
+    form {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    input[type="text"] {
+      flex: 1;
+      padding: 0.6rem 1rem;
+      border-radius: 9999px;
+      border: none;
+      background-color: #f3f4f6;
+      font-size: 1rem;
+      outline-offset: 2px;
+      outline-color: #2563eb;
+      transition: outline-color 0.2s ease-in-out;
+    }
+    input[type="text"]:focus {
+      outline-color: #4338ca;
+      background-color: #e0e7ff;
+    }
+    button {
+      background-color: #fb6e3b;
+      color: white;
+      padding: 0.6rem 1.5rem;
+      border-radius: 9999px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      flex-shrink: 0;
+    }
+    button:hover {
+      background-color: #e65b2c;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f9fafb;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+      padding: 0.65rem 1rem;
+      font-size: 1rem;
+      color: #1e293b;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+      transition: background-color 0.2s;
+    }
+    li.completed label {
+      text-decoration: line-through;
+      color: #7c3aed; /* purple */
+      opacity: 0.7;
+    }
+    li:hover {
+      background-color: #ede9fe;
+    }
+    li label {
+      flex-grow: 1;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    li input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #7c3aed;
+    }
+    .delete-button {
+      background: transparent;
+      border: none;
+      color: #b91c1c;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1.3rem;
+      line-height: 1;
+      padding: 0;
+      transition: color 0.2s;
+    }
+    .delete-button:hover {
+      color: #991b1b;
+    }
+    
